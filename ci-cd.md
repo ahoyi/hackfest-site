@@ -34,6 +34,15 @@ contributors: mario
     <span class="text-danger">No members defined</span>
     {% endif %}
   </td>
+  <td>
+    {% if project.components %}
+    {% for component in project.components %}
+    <span class="label label-primary">{{ component }}</span>
+    {% endfor %}
+    {% else %}
+    No Platform components specified
+    {% endif %}
+  </td>
 </tr>
 {% endfor %}
 </table>
