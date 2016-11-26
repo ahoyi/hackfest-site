@@ -85,7 +85,6 @@
   repo:
   stack:
   members:
-    -
   components:
     - FG
   applications:
