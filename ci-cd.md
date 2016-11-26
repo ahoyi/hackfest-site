@@ -1,10 +1,42 @@
 ---
 layout: page
-title: Continuous Integration tools
+title: Status
 permalink: /ci-cd/
 author: brucellino
 octocat: jenktocat.jpg
-contributors:
+contributors: mario
 ---
+<div class="row"></div>
+<strong>Continuous Integration</strong>: The provide hackfest provides <a href="http://ci.sci-gaia.eu:8080">Jenkins instance</a> to help you do continuous integration on your projects. You can also use <a href="https://travis-ci.com">Travis</a>.
+<h3>Project Status</h3>
+<!-- all the projects table goes here -->
+<table class="table">
+<thead>
+  <td>
+    Name
+  </td>
+  <td>
+    Members
+  </td>
+  <td>
+    Platform Components
+  </td>
+</thead>
+{% for project in site.data.cases %}
+<tr>
+  <td>{{ project.name }}</td>
+  <td>
+    {% if project.members %}
+    {% for member in project.members %}
+    <a href="https://githuub.com/{{project.member}}">{{ member }}</a>
+    {% endfor %}
+    {% else %}
+    <span class="text-danger">No members defined</span>
+    {% endif %}
+  </td>
+</tr>
+{% endfor %}
+</table>
 
-We provide a [Jenkins instance](http://ci.sci-gaia.eu:8080) to help you do continuous integration on your projects. You can also use [Travis](https://travis-ci.com).
+<h3>Stories from the Hack</h3>
+Be sure to check the <a href="{{ site.url }}/updates/">Updates</a> page for commentary of the hack and updates on the projects

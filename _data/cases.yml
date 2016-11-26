@@ -1,4 +1,140 @@
 ---
-- name: Case 1
-  description: A use case that does stuff
-  stack: <a frameborder="0" data-theme="light" data-stack-embed="true" data-layers="1,2,3,4" href="https://embed.stackshare.io/stacks/embed/bee0c6451394287117c1e00c886b17"/></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
+- name: Plantisc2
+  repo:  https://github.com/cudanor/Plantisc
+  stack:
+  members:
+    - cudanor
+  components:
+    - oar
+    - Futuregateway
+  applications:
+    - Python
+    - MySQL
+
+- name: AARRMS
+  repo: addisriversmonitor
+  stack:  http://stackshare.io/yosephabate/addisriversmonitorstack
+  members:
+    - yosephabate
+  components:
+    - oar
+    - Futuregateway
+
+- name: AgriSERVICOM
+  repo:
+  stack:
+  members:
+  components:
+    - oar
+    - Futuregateway
+    - ophidia
+  applications:
+    - Python
+    - MySQL
+
+- name: ACEPRD
+  repo:
+  stack: http://stackshare.io/Davazano/aceprd-plant-repository
+  members:
+    - lordmila
+  components:
+    - oar
+    - Futuregateway
+  applications:
+    - Python
+    - PostgreSQL
+
+- name: fuzzyfier
+  repo:
+  stack:
+  members:
+
+- name: CADD
+  repo: UNIZIK-Drug-Design-and-Informatics
+  stack: https://stackshare.io/nnamdi-azikiwe-university-awka/d4pr
+  members:
+    - icuzochukwu
+
+- name: ethernet
+  repo:
+  stack:
+  members:
+    - behailukorma
+
+- name: metdata
+  repo:
+  stack:
+  members:
+    - olutayoajayifunaab
+
+- name: gwas-pipeline
+  repo:
+  stack:
+  members:
+    - damilare88
+  components:
+    - oar
+    - Futuregateway
+  applications:
+    - Python
+    - Perl
+    - java
+    - R
+
+- name: ibis
+  repo:
+  stack:
+  members:
+    -
+  components:
+    - Futuregateway
+  applications:
+    - WEKA
+    - jena
+
+- name: MIPAR
+  repo:
+  stack:
+  members:
+  components:
+    - oar
+    - Futuregateway
+  applications:
+    - R
+
+- name: OAU-MAT
+  repo: https://github.com/trinitysege/OAU-MAT
+  stack:
+  members:
+  components:
+    - oar
+    - Futuregateway
+    - gLibray
+  applications:
+    - Python
+
+- name: UI-NADA
+  repo:
+  stack:
+  members:
+  components:
+    - oar
+    - ophidia
+  applications:
+    - Python
+
+- name: HPC416S
+  repo:
+  stack:
+  members:
+    - trustodia
+  components:
+    - Futuregateway
+  applications:
+    - Qiime
+    - usearch-64-bit
+    - Python
+    - Perl
+    - blast
+    - FastQC
+    - Prodigal

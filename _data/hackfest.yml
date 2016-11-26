@@ -35,10 +35,14 @@ pages:
     title: "{{ site.title development setup }}"
     icon: laptop
     url: /dev-env
-  - name: Integration
-    title: "{{ site.title }} Continuous Integration and Delivery"
+  - name: Status
+    title: "{{ site.title }} Status, Continuous Integration, and Delivery"
     icon: heartbeat
     url: /ci-cd
+  - name: Updates
+    title: "Updates from the {{ site.title }}"
+    icon: newspaper-o
+    url: /updates
 checklists:
   before:
     - name: Have a working development environment
