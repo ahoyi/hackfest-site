@@ -42,7 +42,7 @@ contributors: mario
   </td>
   <td>
     {% if project.stack %}
-    <img style="height: 1em;" src="{{ site.url }}/images/stackshare.png" />
+    <img style="height: 1em;" src="{{ site.url }}images/stackshare.png" />
     {% endif %}
   </td>
   <td>
