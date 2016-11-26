@@ -7,7 +7,7 @@ octocat: jenktocat.jpg
 contributors: mario
 ---
 <div class="row"></div>
-<strong>Continuous Integration</strong>: The provide hackfest provides <a href="http://ci.sci-gaia.eu:8080">Jenkins instance</a> to help you do continuous integration on your projects. You can also use <a href="https://travis-ci.com">Travis</a>.
+<strong>Continuous Integration</strong>: The hackfest provides <a href="http://ci.sci-gaia.eu:8080">Jenkins instance</a> to help you do continuous integration on your projects. You can also use <a href="https://travis-ci.com">Travis</a>.
 <h3>Project Status</h3>
 <!-- all the projects table goes here -->
 <table class="table">
@@ -17,6 +17,12 @@ contributors: mario
   </td>
   <td>
     Members
+  </td>
+  <td>
+    Stack
+  </td>
+  <td>
+    Project
   </td>
   <td>
     Platform Components
@@ -31,7 +37,17 @@ contributors: mario
     <a href="https://githuub.com/{{project.member}}">{{ member }}</a>
     {% endfor %}
     {% else %}
-    <span class="text-danger">No members defined</span>
+    <!-- <span class="text-danger">No members defined</span> -->
+    {% endif %}
+  </td>
+  <td>
+    {% if project.stack %}
+    <img style="height: 1em;" src="{{ site.url }}/images/stackshare.png" />
+    {% endif %}
+  </td>
+  <td>
+    {% if project.repo %}
+    <a href="{{ project.repo }}"><i class="fa fa-github"></i></a>
     {% endif %}
   </td>
   <td>
@@ -40,7 +56,7 @@ contributors: mario
     <span class="label label-primary">{{ component }}</span>
     {% endfor %}
     {% else %}
-    No Platform components specified
+    <!-- No Platform components specified -->
     {% endif %}
   </td>
 </tr>
